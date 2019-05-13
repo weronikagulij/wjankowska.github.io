@@ -1,0 +1,214 @@
+@keyframes armAnimation {
+  20% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(-6deg);
+  }
+  70% {
+      transform: rotate(-6deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+/* .reflect stop {
+    stop-color: red !important;
+}
+
+.reflect_glasses stop {
+    stop-color: red !important;
+} */
+
+.arm {
+  animation-iteration-count: infinite;
+  transform-origin: 67% 69%; 
+animation-duration: 5s;
+animation-name: armAnimation;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
+}
+
+@keyframes leafAnimation {
+  0% {
+      transform: rotate(-1deg);
+  }
+
+  5% {
+      transform: rotate(-1deg);
+  }
+  55% {
+      transform: rotate(-5deg);
+  }
+  100% {
+      transform: rotate(-1deg);
+  }
+}
+
+@keyframes leafAnimation2 {
+
+  50% {
+      transform: rotate(-6deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+@keyframes leafAnimation3 {
+
+  50% {
+      transform: rotate(-4deg);
+  }
+  100% {
+      transform: rotate(0);
+  }
+}
+
+.leaf_1 {
+  /* animation-timing-function: ease-in; */
+  animation-iteration-count: infinite;
+  transform: rotate(-1deg);
+  transform-origin: 80% 67%; 
+animation-duration: 9s;
+animation-name: leafAnimation;
+animation-fill-mode: forwards;
+animation-timing-function: ease;
+animation-delay: 2.4s;
+}
+
+.leaf_2 {
+  transform-origin: 80% 67%; 
+animation-duration: 9s;
+animation-name: leafAnimation2;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+transform: rotate(0deg);
+}
+
+.leaf_3 {
+  transform-origin: 80% 67%; 
+animation-duration: 9s;
+animation-name: leafAnimation3;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+transform: rotate(0deg);
+animation-delay:0.4s;
+}
+
+@keyframes lightAnimation {
+  7% {
+      opacity: 1;
+  }
+
+  26% {
+      opacity: 1;
+  }
+
+  33% {
+      opacity: 0;
+  }
+
+  /* change color  */
+
+  40% {
+      opacity: 1;
+  }
+
+  59% {
+      opacity: 1;
+  }
+
+  66% {
+      opacity: 0;
+  }
+
+  /* change color  */
+
+  73% {
+      opacity: 1;
+  }
+
+  92% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.reflect_animation {
+  animation-name: lightAnimation;
+  animation-duration: 9s;
+  opacity: 0;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes colorAnimation {
+  0% {
+      stop-color: #4CB4FF;
+  }
+
+  /* change color  */
+  33% {
+      stop-color: #4CB4FF;
+  }
+  34% {
+      stop-color: rgba(143, 220, 255, 0.829);
+  }
+
+  /* change color  */
+  66% {
+      stop-color: rgba(143, 220, 255, 0.829);
+  }
+  67% {
+      stop-color: rgba(253, 253, 218, 0.774);
+  }
+  100% {
+      stop-color: rgba(253, 253, 218, 0.774);
+  }
+}
+
+
+@keyframes colorGlassesAnimation {
+  0% {
+      stop-color: rgb(247, 252, 255);
+  }
+
+  /* change color  */
+  33% {
+      stop-color: rgb(247, 252, 255);
+  }
+  34% {
+      stop-color: rgba(208, 238, 252, 0.945);
+  }
+
+  /* change color  */
+  66% {
+      stop-color: rgba(208, 238, 252, 0.945);
+  }
+  67% {
+      stop-color: rgb(255, 255, 222);
+  }
+  100% {
+      stop-color: rgb(255, 255, 222);
+  }
+}
+
+.reflect stop {
+  
+  animation-name: colorAnimation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+.reflect_glasses stop {
+  animation-name: colorGlassesAnimation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
